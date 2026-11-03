@@ -1,0 +1,32 @@
+# Local archives and generated document previews
+*.zip
+*.zip.sha256
+/QuLeBanAuth-Go服务器接入文档.html
+
+# Go build/test output
+/bin/
+/dist/
+/build/
+/tmp/
+*.exe
+*.test
+*.out
+coverage*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Private local configuration and certificates
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.yaml
+*.local.yml
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,9 +1,11 @@
 # QuLeBanAuth Go
 
-APP 服务器（Go）接入库，提供 code / SSToken 的生成、校验与 UID 读取，以及可选的 HTTPS 回调验签方法。
+APP 服务器（Go）接入库，提供 code / SSToken 的生成、校验与 UID 读取，以及 HTTP 回调验签、游戏扣费订单校验和大厅 API 请求签名。
 
 - [完整接入步骤及全部方法](QuLeBanAuth-Go服务器接入文档.md)
 - [APP 服务器 HTTP 回调示例](examples/hostserver/README.md)
+- [APP 主动扣费：订单、扣费通知与游戏处理结果](APP主动扣费接入.md)
+- [游戏开始、结束通知与结算查询](游戏对局结算接入.md)
 
 ## 集成
 

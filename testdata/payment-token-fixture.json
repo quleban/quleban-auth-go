@@ -1,0 +1,7 @@
+{
+  "app_id": "qlb_0123456789abcdef0123456789abcdef",
+  "app_secret": "BwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwc",
+  "now": 1900000000000,
+  "order_json": "{\u0022app_id\u0022:\u0022qlb_0123456789abcdef0123456789abcdef\u0022,\u0022order_id\u0022:\u0022cross-language-1\u0022,\u0022uid\u0022:\u0022u111\u0022,\u0022mg_id\u0022:\u00221\u0022,\u0022room_id\u0022:\u002212345\u0022,\u0022round_id\u0022:\u0022round-1\u0022,\u0022amount\u0022:10,\u0022action\u0022:\u0022buy_item\u0022,\u0022action_name\u0022:\u0022\u8D2D\u4E70\u7269\u54C1\u0022,\u0022action_data\u0022:{\u0022item_id\u0022:3},\u0022expire_at\u0022:1900000600000,\u0022created_at\u0022:1900000000000}",
+  "order_token": "qlbpay1.eyJhcHBfaWQiOiJxbGJfMDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWYiLCJvcmRlcl9pZCI6ImNyb3NzLWxhbmd1YWdlLTEiLCJ1aWQiOiJ1MTExIiwibWdfaWQiOiIxIiwicm9vbV9pZCI6IjEyMzQ1Iiwicm91bmRfaWQiOiJyb3VuZC0xIiwiYW1vdW50IjoxMCwiYWN0aW9uIjoiYnV5X2l0ZW0iLCJhY3Rpb25fbmFtZSI6Iui0reS5sOeJqeWTgSIsImFjdGlvbl9kYXRhIjp7Iml0ZW1faWQiOjN9LCJleHBpcmVfYXQiOjE5MDAwMDA2MDAwMDAsImNyZWF0ZWRfYXQiOjE5MDAwMDAwMDAwMDB9.RVw6TxEq5VBuXOGdlXMYTXEtO7FXvsOgFobncIy5pwI"
+}

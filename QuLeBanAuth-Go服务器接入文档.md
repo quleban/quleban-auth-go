@@ -49,6 +49,10 @@ if !result.IsSuccess {
 
 AppSecret、SSToken 仅用于服务器。code 过期后重新获取；旧 SSToken 已过期时重新走 code 兑换流程。HTTP 数据格式和示例见 [APP 服务器回调示例](examples/hostserver/README.md)。
 
+启用 APP 移动端主动扣费时，按 [APP 主动扣费接入](APP主动扣费接入.md) 校验游戏订单、直接扣费、通知大厅并接收游戏处理结果。订单包含操作类型、名称、详情；APP 不需要先查询大厅订单。
+
+游戏开始、结束通知，以及 APP 主动查询每局结算数据后加金币，见 [游戏对局结算接入](游戏对局结算接入.md)。
+
 5. 需要查看或运行示例时，将源码拉取到本地：
 
 ```sh
@@ -82,9 +86,13 @@ func (client *QuLeBanAuth) GetUidByCode(code string) *QuLeBanUid
 func (client *QuLeBanAuth) GetUidBySSToken(ssToken string) *QuLeBanUid
 func (client *QuLeBanAuth) VerifyCode(code string) bool
 func (client *QuLeBanAuth) VerifySSToken(code string) bool
+func (client *QuLeBanAuth) VerifyPaymentOrder(orderToken string) (*PaymentOrder, error)
+func (client *QuLeBanAuth) SignAPIRequest(req *http.Request) error
 ```
 
 ## 错误码定义
+
+支付订单校验与 HTTP 签名方法返回 Go `error`，具体使用及字段见 [APP 主动扣费接入](APP主动扣费接入.md)。原 code/SSToken 方法继续使用下列错误码。
 
 ```go
 const (
